@@ -1,0 +1,47 @@
+# Terraform state files
+*.tfstate
+*.tfstate.backup
+terraform.tfstate.d/
+
+# Terraform variables (if containing sensitive data)
+*.tfvars
+*.tfvars.json
+!example.tfvars  # Allow committed example files
+
+# Terraform logs and crash reports
+crash.log
+*.log
+
+# Terraform provider cache
+.terraform/
+.terraform.lock.hcl
+
+# Ignore Terraform execution plan files
+*.tfplan
+
+# Ignore environment-specific configurations
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore SSH keys if generated during Terraform runs
+*.pem
+*.key
+
+
+# Ignore AWS CLI dist files
+aws/dist/
+
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore virtual environment
+selenium_venv/
+
+# Ignore test reports
+test-reports/
+*.xml
+
